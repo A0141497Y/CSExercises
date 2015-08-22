@@ -20,18 +20,22 @@ namespace CSExercises
             double TV_price = TV_qty * 900;
             double DVD_price = DVD_qty * 500;
             double MP3_price = MP3_qty * 700;
+            double TotPrice = TV_price + DVD_price + MP3_price;
 
-            if (TV_price > 5000 && TV_price <= 10000)
+            if (TotPrice > 5000 && TotPrice <= 10000)
+            {
                 TV_price = TV_price * (1 - 0.1);
-            else if (TV_price > 10000)
-                TV_price = TV_price * (1 - 0.15);
-
-            if (DVD_price > 5000 && DVD_price <= 10000)
                 DVD_price = DVD_price * (1 - 0.1);
-            else if (DVD_price > 10000)
+            }
+            else if (TotPrice > 10000)
+            {
+                TV_price = TV_price * (1 - 0.15);
                 DVD_price = DVD_price * (1 - 0.15);
+            }
 
-            Console.WriteLine("Total price for this order is: {0:c} ", TV_price + DVD_price + MP3_price); 
+            TotPrice = TV_price + DVD_price + MP3_price;
+
+            Console.WriteLine("Total price for this order is: {0:c} ", TotPrice); 
         }
     }
 }
