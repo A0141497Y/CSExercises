@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSExercises.Ex46</StartupObject>
+    <StartupObject>CSExercises.Case.Case3</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -44,6 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Case\Case1.cs" />
+    <Compile Include="Case\Case2.cs" />
+    <Compile Include="Case\Case3.cs" />
+    <Compile Include="Case\Extra1.cs" />
+    <Compile Include="Case\Extra2.cs" />
     <Compile Include="Ex01-06\Ex06.cs" />
     <Compile Include="Ex01-06\Ex05.cs" />
     <Compile Include="Ex01-06\Ex04.cs" />
